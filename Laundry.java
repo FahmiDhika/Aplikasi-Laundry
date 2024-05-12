@@ -2,6 +2,8 @@ package AplikasiLaundry;
 import java.util.ArrayList;
 
 public class Laundry {
+    String namaLaundry = "\t Berkah Laundry";
+    
     private ArrayList<String> jenisLaundry = new ArrayList<>();
     private ArrayList<Integer> harga = new ArrayList<>();
     private ArrayList<Integer> durasi = new ArrayList<>();
@@ -25,7 +27,7 @@ public class Laundry {
     }
     
     public String getNamaLaundry(int idLaundry){
-        return this.getNamaLaundry(idLaundry);
+        return this.jenisLaundry.get(idLaundry);
     }
     
     public String getJenisLaundry(String jenisLaundry){
@@ -37,14 +39,22 @@ public class Laundry {
     }
     
     public int getHarga(int idLaundry){
-        return this.getHarga(idLaundry);
+        return this.harga.get(idLaundry);
     }
     
     public void setDurasi(int durasi){
         this.durasi.add(durasi);
     }
     
-    public int getDurasi(){
-        return this.getDurasi();
+    public int getDurasi(int idLaundry) {
+        return this.durasi.get(idLaundry);
+    }
+    
+    public void editHarga(int idLaundry, int harga) {
+        this.harga.set(idLaundry, harga);
+    }
+    
+    public int getJumlahLaundry() {
+        return this.jenisLaundry.size();
     }
 }

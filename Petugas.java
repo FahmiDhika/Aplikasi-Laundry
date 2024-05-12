@@ -66,7 +66,7 @@ public class Petugas implements User{
     }
 
     @Override
-    public void setKode() {
+    public void setId() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -86,7 +86,7 @@ public class Petugas implements User{
     }
 
     @Override
-    public String getKode() {
+    public String getId() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -99,4 +99,5 @@ public class Petugas implements User{
     public String getTelepon() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
 }

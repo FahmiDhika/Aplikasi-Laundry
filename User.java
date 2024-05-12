@@ -2,12 +2,12 @@ package AplikasiLaundry;
 
 public interface User {
     void setNama();
-    void setKode();
+    void setId();
     void setAlamat();
     void setTelepon();
     
     String getNama();
-    String getKode();
+    String getId();
     String getAlamat();
     String getTelepon();
 }

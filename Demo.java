@@ -2,11 +2,16 @@ package AplikasiLaundry;
 
 public class Demo {
     public static void main(String[] args) {
-        Transaksi transaksi = new Transaksi();
         Client client = new Client();
-        Laundry laundry = new Laundry();
+        Laundry jenis = new Laundry();
+        Transaksi transaksi = new Transaksi();
+        Laporan lapor= new Laporan();
         
-        
-        transaksi.prosesTransaksi(client, laundry, transaksi);
+        lapor.NamaLaundry();
+        lapor.laporan(jenis);
+        lapor.laporan(client);
+        transaksi.prosesTransaksi(client, jenis, transaksi);
+        lapor.laporan(jenis);
+        lapor.laporan(client);
     }
 }
